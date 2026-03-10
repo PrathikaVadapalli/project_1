@@ -1,47 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Connect2Wed</title>
-    <link rel="stylesheet" href="file2.css">
+<title>Connect2Wed</title>
+<link rel="stylesheet" href="file2.css">
 </head>
 
 <body>
 
+<div class="container">
+
 <h1>Connect2Wed</h1>
 <h3>Turning Connections into Commitments</h3>
 
-<div class="container">
+<form>
 
-<h2>Register Profile</h2>
+<input type="text" placeholder="Enter Your Name" required>
 
-<form id="registerForm">
+<input type="email" placeholder="Enter Email">
 
-<input type="text" id="name" placeholder="Full Name" required>
-
-<input type="email" id="email" placeholder="Email" required>
-
-<input type="date" id="dob" required>
-
-<select id="maritalStatus">
-<option value="">Select Marital Status</option>
-<option value="Single">Single</option>
-<option value="Divorced">Divorced</option>
-<option value="Married">Married</option>
+<select>
+<option>Select Marital Status</option>
+<option>Single</option>
+<option>Divorced</option>
+<option>Married</option>
 </select>
-
-<input type="text" id="education" placeholder="Education">
-
-<input type="text" id="profession" placeholder="Profession">
 
 <button type="submit">Create Profile</button>
 
 </form>
 
-<div id="result"></div>
-
 </div>
-
-<script src="script.js"></script>
 
 </body>
 </html>
