@@ -1,183 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<title>the best website</title>
-
-<title>Marvellous Websites</title>
->>>>>>> d9a1a16a428e6b05d8b7fec98fe62a210aca92c0
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
-}
-
-body{
-background:#f4f6f8;
-}
-
-/* Navbar */
-
-header{
-background:#222;
-color:white;
-padding:15px 50px;
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-nav ul{
-list-style:none;
-display:flex;
-}
-
-nav ul li{
-margin-left:20px;
-}
-
-nav ul li a{
-color:white;
-text-decoration:none;
-font-size:18px;
-}
-
-.logo{
-color:#00c6ff;
-}
-
-/* Hero Section */
-
-.hero{
-height:80vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-background:linear-gradient(120deg,#00c6ff,#0072ff);
-color:white;
-}
-
-.hero h1{
-font-size:48px;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:20px;
-margin-bottom:20px;
-}
-
-.hero button{
-padding:10px 25px;
-border:none;
-background:white;
-color:#0072ff;
-font-size:18px;
-border-radius:5px;
-cursor:pointer;
-}
-
-/* Features */
-
-.features{
-display:flex;
-justify-content:center;
-gap:30px;
-padding:50px;
-flex-wrap:wrap;
-}
-
-.card{
-background:white;
-padding:30px;
-width:250px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-text-align:center;
-}
-
-.card h3{
-margin-bottom:10px;
-}
-
-/* Footer */
-
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:20px;
-}
-
-</style>
-
+    <title>Connect2Wed</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-<nav>
-<h2 class="logo">MySite</h2>
+<h1>Connect2Wed</h1>
+<h3>Turning Connections into Commitments</h3>
 
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="#">Contact</a></li>
-</ul>
+<div class="container">
 
-</nav>
-</header>
+<h2>Register Profile</h2>
 
-<section class="hero">
+<form id="registerForm">
 
-<div class="hero-text">
-<h1>hihiiiiiii welcomeee</h1>
-<p>Create beautiful websites using HTML and CSS.</p>
-<button>Learn More</button>
+<input type="text" id="name" placeholder="Full Name" required>
+
+<input type="email" id="email" placeholder="Email" required>
+
+<input type="date" id="dob" required>
+
+<select id="maritalStatus">
+<option value="">Select Marital Status</option>
+<option value="Single">Single</option>
+<option value="Divorced">Divorced</option>
+<option value="Married">Married</option>
+</select>
+
+<input type="text" id="education" placeholder="Education">
+
+<input type="text" id="profession" placeholder="Profession">
+
+<button type="submit">Create Profile</button>
+
+</form>
+
+<div id="result"></div>
+
 </div>
 
-</section>
-
-<section class="features">
-
-<div class="card">
-<h3>Fast</h3>
-<p>Our websites load quickly and smoothly.</p>
-</div>
-
-<div class="card">
-<h3>Responsive</h3>
-<p>Works perfectly on mobile, tablet and desktop.</p>
-</div>
-
-<div class="card">
-<h3>Modern</h3>
-<p>Clean and modern web design styles.</p>
-</div>
-
-</section>
-
-<footer>
-<p>© 2026 MySite | Designed with HTML & CSS</p>
-</footer>
+<script src="script.js"></script>
 
 </body>
-
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> b7eea61391f78b0f8031e375ab5e8bf755c3e7cf
