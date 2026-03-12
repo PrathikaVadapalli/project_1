@@ -26,13 +26,12 @@ width:380px;
 
 h1{
 color:#c2185b;
-margin-bottom:10px;
 }
 
 .success{
 color:green;
 font-weight:bold;
-margin-bottom:20px;
+margin-bottom:15px;
 }
 
 .info{
@@ -41,10 +40,6 @@ padding:15px;
 border-radius:8px;
 margin-top:10px;
 text-align:left;
-}
-
-.info p{
-margin:6px 0;
 }
 
 button{
@@ -75,25 +70,55 @@ background:#880e4f;
 
 <div class="info">
 
-<p><b>Zodiac Sign:</b> Libra</p>
+<p><b>Zodiac Sign:</b> <span id="zodiac"></span></p>
 
-<p><b>Compatibility Insight:</b> High compatibility with Aries, Gemini, Leo.</p>
-
-<p><b>Marital Status:</b> Single</p>
+<p><b>Compatibility Insight:</b> Best matches depend on zodiac harmony.</p>
 
 <p><b>Trust Level:</b> Verified Profile</p>
 
 </div>
 
-<p style="margin-top:15px;">
-Your profile is now active. Start exploring compatible matches.
-</p>
+<p>Your profile is now active. Start exploring matches.</p>
 
 <a href="home.html">
 <button>Go to Dashboard</button>
 </a>
 
 </div>
+
+<script>
+
+function getZodiac(day, month){
+
+if((month==3 && day>=21)||(month==4 && day<=19)) return "Aries";
+if((month==4 && day>=20)||(month==5 && day<=20)) return "Taurus";
+if((month==5 && day>=21)||(month==6 && day<=20)) return "Gemini";
+if((month==6 && day>=21)||(month==7 && day<=22)) return "Cancer";
+if((month==7 && day>=23)||(month==8 && day<=22)) return "Leo";
+if((month==8 && day>=23)||(month==9 && day<=22)) return "Virgo";
+if((month==9 && day>=23)||(month==10 && day<=22)) return "Libra";
+if((month==10 && day>=23)||(month==11 && day<=21)) return "Scorpio";
+if((month==11 && day>=22)||(month==12 && day<=21)) return "Sagittarius";
+if((month==12 && day>=22)||(month==1 && day<=19)) return "Capricorn";
+if((month==1 && day>=20)||(month==2 && day<=18)) return "Aquarius";
+return "Pisces";
+
+}
+
+const params = new URLSearchParams(window.location.search);
+const dob = params.get("dob");
+
+if(dob){
+
+let date = new Date(dob);
+let day = date.getDate();
+let month = date.getMonth()+1;
+
+document.getElementById("zodiac").innerText = getZodiac(day,month);
+
+}
+
+</script>
 
 </body>
 </html>
