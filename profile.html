@@ -21,15 +21,30 @@ padding:40px;
 border-radius:12px;
 box-shadow:0 6px 20px rgba(0,0,0,0.2);
 text-align:center;
-width:350px;
+width:380px;
 }
 
 h1{
 color:#c2185b;
+margin-bottom:10px;
 }
 
-p{
-color:#555;
+.success{
+color:green;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+.info{
+background:#f9f9f9;
+padding:15px;
+border-radius:8px;
+margin-top:10px;
+text-align:left;
+}
+
+.info p{
+margin:6px 0;
 }
 
 button{
@@ -39,7 +54,7 @@ border:none;
 padding:12px 20px;
 border-radius:6px;
 cursor:pointer;
-margin-top:15px;
+margin-top:20px;
 }
 
 button:hover{
@@ -54,9 +69,25 @@ background:#880e4f;
 
 <div class="box">
 
-<h1>Profile has been Created Successfully 🎉</h1>
+<h1>Connect2Wed</h1>
 
-<p>Welcome to Connect2Wed. Start exploring compatible matches.</p>
+<p class="success">🎉 Profile Created Successfully!</p>
+
+<div class="info">
+
+<p><b>Zodiac Sign:</b> Libra</p>
+
+<p><b>Compatibility Insight:</b> High compatibility with Aries, Gemini, Leo.</p>
+
+<p><b>Marital Status:</b> Single</p>
+
+<p><b>Trust Level:</b> Verified Profile</p>
+
+</div>
+
+<p style="margin-top:15px;">
+Your profile is now active. Start exploring compatible matches.
+</p>
 
 <a href="home.html">
 <button>Go to Dashboard</button>
