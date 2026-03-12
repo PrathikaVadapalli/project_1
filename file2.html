@@ -31,13 +31,13 @@ margin-bottom:5px;
 
 .tagline{
 color:#777;
-margin-bottom:25px;
+margin-bottom:20px;
 }
 
 input,select{
 width:90%;
 padding:12px;
-margin:10px 0;
+margin:8px 0;
 border-radius:6px;
 border:1px solid #ccc;
 font-size:14px;
@@ -52,6 +52,7 @@ border:none;
 border-radius:6px;
 font-size:16px;
 cursor:pointer;
+margin-top:10px;
 }
 
 button:hover{
@@ -75,12 +76,19 @@ background:#880e4f;
 
 <input type="email" placeholder="Email Address" required>
 
+<label>Date of Birth</label>
+<input type="date" required>
+
 <select required>
-<option value="">Select Marital Status of USer</option>
+<option value="">Select Marital Status</option>
 <option>Single</option>
 <option>Divorced</option>
 <option>Married</option>
 </select>
+
+<input type="text" placeholder="Education">
+
+<input type="text" placeholder="Profession">
 
 <button type="submit">Create Profile</button>
 
